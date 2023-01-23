@@ -1,0 +1,31 @@
+<section class="container">
+    <mat-card class="mat-card" *ngFor="let info of users">
+        <mat-card-content>
+            <div class="flexi">
+                <p class="f-weight">Name</p>
+                <p>{{info.name}}</p>
+            </div>
+            <div class="flexi">
+                <p class="f-weight">Username</p>
+                <p>{{info.username}}</p>
+            </div>
+            <div class="flexi">
+                <p class="f-weight">Email</p>
+                <p>{{info.email}}</p>
+            </div>
+            <div class="flexi">
+                <p class="f-weight">Address</p>
+                <p>{{info.address.street+", "+info.address.suite+", "+info.address.city+", ZIP :"+info.address.zipcode}}
+                </p>
+            </div>
+            <div class="flexi">
+                <p class="f-weight">Phone Number</p>
+                <p>{{info.phone}}</p>
+            </div>
+            <div class="flexi">
+                <p class="f-weight">Company</p>
+                <p>{{info.company.name}}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</section>
